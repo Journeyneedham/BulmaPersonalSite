@@ -7,58 +7,15 @@
     <link rel="stylesheet" href="indexCSS.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
   </head>
   <body>
-  <!--
-    <nav class="navbar is-info">
-      <div class="container">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="#" style="font-weight:bold;">
-            
-          </a>
-          <span class="navbar-burger burger" data-target="navMenu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </div>
-        <div id="navMenu" class="navbar-menu">
-          <div class="navbar-end">
-            <a href="#" class="navbar-item is-active">Home</a>
-            <a href="#" class="navbar-item">Blog</a>
-            <a href="#" class="navbar-item">Forum</a>
-            <a href="#" class="navbar-item">Shop</a>
-            <a href="#" class="navbar-item">Examples</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <div class="columns is-centered">
-      <div class="column is-3 is-centered">
-        <section class="section">
-          <div class="container">
-            <h1 class="title">
-              Hi, I'm Journey
-            </h1>
-            <p class="subtitle">
-              This is my website!
-            </p>
-          </div>
-        </section>
-      </div>
-      <div class="column is-8 is-centered">
-        <figure class="image">
-          <img src="WebsiteCoverPhoto2.svg">
-        </figure>
-      </div>
-    </div>
-  --> 
+ 
   <nav class="navbar is-fixed-top is-dark">
       <div class="container">
           <div class="navbar-brand">
-            <a class="navbar-item">
-              <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
-            </a>
+
             <span class="navbar-burger burger" data-target="navbarMenuHeroB">
               <span></span>
               <span></span>
@@ -67,28 +24,29 @@
           </div>
           <div id="navbarMenuHeroB" class="navbar-menu">
             <div class="navbar-end">
-              <a class="navbar-item is-active">
-                Home
+              <a class="navbar-item" href="index.html#top">
+                Top
               </a>
-              <a class="navbar-item">
-                Examples
+              <a class="navbar-item" href="index.html#about">
+                About
               </a>
-              <a class="navbar-item">
-                Documentation
+              <a class="navbar-item" href="index.html#projects">
+                Projects
               </a>
               <span class="navbar-item">
-                <a class="button is-info is-inverted">
+                <a class="button is-info is-inverted" href="https://github.com/Journeyneedham" target="_blank">
                   <span class="icon">
                     <i class="fab fa-github"></i>
                   </span>
-                  <span>Download</span>
+                  <span>My GitHub</span>
                 </a>
               </span>
             </div>
           </div>
         </div>
       </nav>
-  <section class="hero is-large is-fullheight-with-navbar ">
+  <a style="cursor: default">
+  <section class="hero is-large is-fullheight-with-navbar " id="top">
       <div class="hero-head">
 
       </div>
@@ -105,10 +63,11 @@
       </div>
       
   </section>
+</a>
   <section>
       <div class="columns is-centered">
         <div class="column is-6">
-            <h2 class="title is-2 has-text-centered">What I'm about</h2>
+            <h2 class="title is-2 has-text-centered" id="about">What I'm about</h2>
             <hr>
             <p class="subtitle is-5 has-text-centered"><em>For those who prefer a more, vintage approach:</em></p>
         </div>
@@ -122,8 +81,10 @@
                     <p><i class="fas fa-circle" style="color: #ff6159"></i> <i class="fas fa-circle" style="color: #ffbd2e"></i> <i class="fas fa-circle" style="color: #28c941"></i>  guest@journeyneedham.com - ssh</p>
                     <button class="delete" aria-label="delete"></button>
                   </div>
-                  <div class="message-body" style="background-color: rgb(34, 33, 33); color: white">
-                    Welcome. Type <strong>'help'</strong> for a list of commands<br><a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+                  <div class="message-body" style="background-color: rgb(34, 33, 33); color: white; max-height: 300px; overflow-y: auto" id="messageBody">
+                    Welcome. Type <strong>'help'</strong> for a list of commands<br>
+                    <div id="typeDiv">jn:~ guest$ <input class="message" id="editableDiv" contenteditable="true" style="display: inline-block; background-color: transparent; border: 0; color: white; outline: none"></input>
+                  </div>
                   </div>
                 </article>
   
@@ -137,7 +98,7 @@
 
       <div class="columns is-centered">
         
-        <div class="column is-8">
+        <div class="column is-8 box">
             <p class="subtitle is-5 has-text-left">&emsp;<em><span class="title is-2">"I</span>t was a dark, and stormy night in the small village of Harrisburg. 
               The peasants were tucked in their warm hay cots, but unbeknownst to them, a mad scientist's piece de resistance was at work! 
               In his time, this scientist had spun a concotion of terrifyingly morbid proportions, which would chill any poor, gawking happenstander to their core. 
@@ -145,11 +106,12 @@
               <br><br>&emsp; That fateful night, this child..t-this abomination, would lay his hands upon the keyboard and type into the google searchbar, in his unholy disregard for the sanctity of man --"
               <br><br><p class="title is-2 has-text-centered">Javascript tutorial</p>
               <p class="has-text-centered">*thunder crackle!* *lightning strike!*</p></em></p>
-              <hr>
+              <br>
+              <p class="has-text-right is-small"><em>Chapter 1, Page 1: The Circumstances of The Birth of Journey</em></p>
         </div>
 
       </div>
-      
+     <br> 
 
     </section>
     <div class="columns is-centered">
@@ -164,7 +126,7 @@
                with bill of material output into pdf and importable excel data. Another project I worked on was a configurator for DIN Rail, which was made with a responsive <span class="has-text-info">Bootstrap 3</span> front end 
                and a <span class="has-text-info">PHP / mySQL</span> backend. 
                This configurator stored login information in tandem with DIN Rail information, which in addition to having a dynamic DIN Rail selection, 
-               allowed for new DIN Rail part numbers to be added in the DB and viewed instantly!.</p>
+               allowed for new DIN Rail part numbers to be added in the DB and viewed instantly!</p>
         </div>
         <div class="column is-3">
         <figure class="image is-6by6">
@@ -178,8 +140,9 @@
 
     </section>
     <hr>
+    <a href="index.html#projects" style="cursor: default"></a>
     <section>
-        <p class="title is-1 has-text-centered">Projects</p>
+        <p class="title is-1 has-text-centered" id="projects">Projects</p>
         <p class="subtitle is-6 has-text-centered"><em>(Some of these are older, and haven't been worked on for a couple of sun-spins. <br>I'll get to it "tomorrow")</em></p>
       <div class="columns is-centered">
 
@@ -209,7 +172,7 @@
             <div class="card">
                 <div class="card-image">
                   <figure class="image is-by3">
-                    <img src="skyriminfinity.png" alt="Placeholder image">
+                    <img src="yslogo.jpg" alt="Placeholder image">
                   </figure>
                 </div>
                 <div class="card-content">
@@ -217,32 +180,133 @@
                   <div class="content">
                     Working with Spotify and YouTube APIs to offer music based apon local popularity and various search paramaters
                     <br><br>
-                    <span class="tag is-dark">Creation Kit</span>
-                    <span class="tag is-info">Photoshop</span>
-                    <span class="tag is-primary">Papyrus</span>
+                    <span class="tag is-light">Bootstrap 4</span>
+                    <span class="tag is-success">Spotify API</span>
+                    <span class="tag is-danger">Youtube API</span>
+                    <span class="tag is-warning">Javascript</span>
                   </div>
                 </div>
               </div>
               </a>
         </div>
-        
-
-       
-
+    
       </div>
+      <div class="columns is-centered">
+
+          <div class="column is-4 is-centered">
+              <a href="https://www.youtube.com/watch?v=Pk6ZE5R2-A8&t=1s" target="_blank">
+              <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-by3">
+                      <img src="lastsamurai.jpg" alt="Placeholder image">
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    
+                    <div class="content">
+                      Samurai Game made in GameMaker Studio; pizel art textures and effects designed in photoshop
+                      <br><br>
+                      <span class="tag is-dark">GameMaker Studio</span>
+                      <span class="tag is-info">Photoshop</span>
+                      <span class="tag is-primary">GML</span>
+                    </div>
+                  </div>
+                </div>
+                </a>
+          </div>
+          <div class="column is-4 is-centered">
+              <a target="_blank">
+              <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-by3">
+                      <img src="vices.jpg" alt="Placeholder image">
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    
+                    <div class="content">
+                      Game titled "Vices", being worked on in GameMaker Studio 2. Utilizing Photoshop for textures, and Dragonbones for animations
+                      <br><br>
+                      <span class="tag is-dark">GameMaker Studio 2</span>
+                      <span class="tag is-info">Photoshop</span>
+                      <span class="tag is-primary">GML</span>
+                      <span class="tag is-success">Dragonbones</span>
+                    </div>
+                  </div>
+                </div>
+                </a>
+          </div>
+      
+        </div>
 
 
     </section>
-
+    <br>
+    <div class="columns is-centered">
+      <div class="column is-8 box"><div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Text input">
+          </div>
+        </div>
+        
+        <div class="field">
+          <label class="label">Username</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+          <p class="help is-success">This username is available</p>
+        </div>
+        
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-exclamation-triangle"></i>
+            </span>
+          </div>
+          <p class="help is-danger">This email is invalid</p>
+        </div>
+        
+        
+        <div class="field">
+          <label class="label">Message</label>
+          <div class="control">
+            <textarea class="textarea" placeholder="Textarea"></textarea>
+          </div>
+        </div>
+        
+        
+        
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-link">Submit</button>
+          </div>
+          <div class="control">
+            <button class="button is-text">Cancel</button>
+          </div>
+        </div></div>
+    </div>
   </body>
   <script>
-  (function() {
-  var burger = document.querySelector('.burger');
-  var nav = document.querySelector('#'+burger.dataset.target);
- 
-  burger.addEventListener('click', function(){
-    burger.classList.toggle('is-active');
-    nav.classList.toggle('is-active');
-  });
-})();</script>
+      (function() {
+      var burger = document.querySelector('.burger');
+      var nav = document.querySelector('#'+burger.dataset.target);
+     
+      burger.addEventListener('click', function(){
+        burger.classList.toggle('is-active');
+        nav.classList.toggle('is-active');
+      });
+    })();</script>
+  <script src="indexJS.js"></script>
 </html>
