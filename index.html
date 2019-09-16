@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>Journey Needham</title>
     <link rel="stylesheet" href="indexCSS.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -33,6 +33,9 @@
               <a class="navbar-item" href="index.html#projects">
                 Projects
               </a>
+              <a class="navbar-item" href="index.html#contact">
+                  Contact
+                </a>
               <span class="navbar-item">
                 <a class="button is-info is-inverted" href="https://github.com/Journeyneedham" target="_blank">
                   <span class="icon">
@@ -41,17 +44,25 @@
                   <span>My GitHub</span>
                 </a>
               </span>
+              <span class="navbar-item">
+                  <a class="button is-info" href="resume.pdf" download>
+                    <span class="icon">
+                      <i class="fas fa-file"></i>
+                    </span>
+                    <span>My Resume</span>
+                  </a>
+                </span>
             </div>
           </div>
         </div>
       </nav>
   <a style="cursor: default">
-  <section class="hero is-large is-fullheight-with-navbar " id="top">
+  <section class="hero is-large is-fullheight-with-navbar " id="top" style="background-image: url(starsback.png)">
       <div class="hero-head">
 
       </div>
     
-      <div class="hero-body" style="background-image: url(WebsiteCoverPhoto2.svg); background-repeat: no-repeat; background-position: center;">
+      <div class="hero-body" style="background-image: url(WebsiteCoverPhoto3.svg); background-repeat: no-repeat; background-position: center;">
         <div class="container has-text-left">
           <p class="title is-1">
             Hi, I'm Journey
@@ -91,7 +102,7 @@
           </div>
       </div>
 
-      <p class="subtitle is-5 has-text-centered"><em>conversely, for those who prefer a gui, or dont know who this gui guy is:</em></p>
+      <p class="subtitle is-5 has-text-centered"><em>conversely, for those who prefer a gui:</em></p>
       <br>
 
     <section>
@@ -126,7 +137,8 @@
                with bill of material output into pdf and importable excel data. Another project I worked on was a configurator for DIN Rail, which was made with a responsive <span class="has-text-info">Bootstrap 3</span> front end 
                and a <span class="has-text-info">PHP / mySQL</span> backend. 
                This configurator stored login information in tandem with DIN Rail information, which in addition to having a dynamic DIN Rail selection, 
-               allowed for new DIN Rail part numbers to be added in the DB and viewed instantly!</p>
+               allowed for new DIN Rail part numbers to be added in the DB and viewed instantly! In my time on this planet, I've worked with HTML, CSS, <span class="has-text-info">Bootstrap 3 & 4</span>, Bulma, <span class="has-text-danger">Javascript</span>, 
+               JQuery, PHP, MySql, <span class="has-text-primary">Apache</span>, Python, and Papyrus</p>
         </div>
         <div class="column is-3">
         <figure class="image is-6by6">
@@ -139,7 +151,9 @@
     </section>
 
     </section>
-    <hr>
+    <div class="columns is-centered">
+        <div class="column is-6">   <hr></div>
+      </div>
     <a href="index.html#projects" style="cursor: default"></a>
     <section>
         <p class="title is-1 has-text-centered" id="projects">Projects</p>
@@ -238,64 +252,104 @@
           </div>
       
         </div>
+        <div class="columns is-centered">
+
+            <div class="column is-4 is-centered">
+                <a>
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-by3">
+                        <img src="business.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      
+                      <div class="content">
+                        Business cards made in Illustrator / Photoshop
+                        <br><br>
+                        <span class="tag is-dander">Illustrator</span>
+                        <span class="tag is-info">Photoshop</span>
+                      </div>
+                    </div>
+                  </div>
+                  </a>
+            </div>
+            <div class="column is-4 is-centered">
+                <a href="https://www.facebook.com/permalink.php?story_fbid=2280135228967874&id=100009142586074" target="_blank">
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-by3">
+                        <img src="jrosa.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      
+                      <div class="content">
+                        General art and photography
+                        <br><br>
+                        <span class="tag is-dark">Nikon D3500</span>
+                        <span class="tag is-info">Photoshop</span>
+                        <span class="tag is-dander">Illustrator</span>
+
+                      </div>
+                    </div>
+                  </div>
+                  </a>
+            </div>
+        
+          </div>
 
 
     </section>
     <br>
     <div class="columns is-centered">
-      <div class="column is-8 box"><div class="field">
-          <label class="label">Name</label>
-          <div class="control">
-            <input class="input" type="text" placeholder="Text input">
-          </div>
-        </div>
+      <div class="column is-6">   <hr></div>
+    </div>
+ 
+    <p class="title is-1 has-text-centered" id="contact">Contact me</p>
+    <p class="subtitle is-6 has-text-centered"><em>Wanna get to know me, collaborate on a project, or invite me to your <span class="has-text-success">birthday party?</span></em></p>
+    <div class="columns is-centered">
+      <div class="column is-8 box ">
+          <form action="https://formspree.io/email@domain.tld" method="POST">
+          <div class="field">
+              <label class="label">Name</label>
+              <div class="control has-icons-left has-icons-right">
+                <input class="input" type="name" placeholder="Your name">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-user-friends"></i>
+                </span>
+              </div>
+            </div>
         
-        <div class="field">
-          <label class="label">Username</label>
-          <div class="control has-icons-left has-icons-right">
-            <input class="input is-success" type="text" placeholder="Text input" value="bulma">
-            <span class="icon is-small is-left">
-              <i class="fas fa-user"></i>
-            </span>
-            <span class="icon is-small is-right">
-              <i class="fas fa-check"></i>
-            </span>
-          </div>
-          <p class="help is-success">This username is available</p>
-        </div>
         
         <div class="field">
           <label class="label">Email</label>
           <div class="control has-icons-left has-icons-right">
-            <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+            <input class="input" type="email" placeholder="Email input" value="hello@">
             <span class="icon is-small is-left">
               <i class="fas fa-envelope"></i>
             </span>
-            <span class="icon is-small is-right">
-              <i class="fas fa-exclamation-triangle"></i>
-            </span>
+
           </div>
-          <p class="help is-danger">This email is invalid</p>
         </div>
         
         
         <div class="field">
           <label class="label">Message</label>
           <div class="control">
-            <textarea class="textarea" placeholder="Textarea"></textarea>
+            <textarea class="textarea" placeholder="You are amazing!"></textarea>
           </div>
         </div>
         
         
         
-        <div class="field is-grouped">
+        <div class="field is-grouped has-addons has-addons-centered">
           <div class="control">
             <button class="button is-link">Submit</button>
           </div>
-          <div class="control">
-            <button class="button is-text">Cancel</button>
-          </div>
-        </div></div>
+        </div>
+      </form>
+      </div>
     </div>
   </body>
   <script>

@@ -55,7 +55,7 @@ input.addEventListener("keyup", function(event) {
       } else if (input.value.toLowerCase() == "about") {
 
         var workStuff = document.createElement('span');
-        workStuff.innerHTML = "Im Journey; I like long walks on the beach, and developing websites for handsome people like you ;)" + '<br>';
+        workStuff.innerHTML = "Im Journey; I like long walks on the beach, and thus far I've worked with html, css, bootstrap, bulma, javascript, jquery, php, mysql, apache, python, and papyrus" + '<br>';
         document.getElementById("messageBody").insertBefore(workStuff, document.getElementById("typeDiv"));
 
       } else if (input.value.toLowerCase() == "hobbies") {
@@ -77,3 +77,5 @@ input.addEventListener("keyup", function(event) {
       return false;
     }
 });
+
+
