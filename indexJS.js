@@ -77,5 +77,3 @@ input.addEventListener("keyup", function(event) {
       return false;
     }
 });
-
-
