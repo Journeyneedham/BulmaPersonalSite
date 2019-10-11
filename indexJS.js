@@ -13,7 +13,7 @@ input.addEventListener("keyup", function(event) {
           
         var cHelp = document.createElement("div");
         var aSpan = [];
-        for (var i = 0; i < 3; i++) {
+        for (var i = 0; i < 4; i++) {
             aSpan[i]  = document.createElement("span");
             aSpan[i].style.color = '#209cee';
             if (i == 0) {
@@ -24,11 +24,15 @@ input.addEventListener("keyup", function(event) {
 
                 aSpan[i].innerHTML = 'hobbies';
                 
-            } else {
+            } else if (i == 2) {
 
                 aSpan[i].innerHTML = 'work';
 
-            }
+            } else {
+
+              aSpan[i].innerHTML = 'languages';
+
+          }
         }
         var insert1 = document.createElement("span");
         insert1.innerHTML = ": Short intro about me" + '<br>';
@@ -36,6 +40,8 @@ input.addEventListener("keyup", function(event) {
         insert2.innerHTML = ": What I do outside of work" + '<br>';
         var insert3 = document.createElement("span");
         insert3.innerHTML = ": What I do at work" + '<br>';
+        var insert4 = document.createElement("span");
+        insert4.innerHTML = ": Languages I've worked with" + '<br>';
 
         document.getElementById("messageBody").insertBefore(aSpan[0], document.getElementById("typeDiv"));
         document.getElementById("messageBody").insertBefore(insert1, document.getElementById("typeDiv"));
@@ -43,6 +49,8 @@ input.addEventListener("keyup", function(event) {
         document.getElementById("messageBody").insertBefore(insert2, document.getElementById("typeDiv"));
         document.getElementById("messageBody").insertBefore(aSpan[2], document.getElementById("typeDiv"));
         document.getElementById("messageBody").insertBefore(insert3, document.getElementById("typeDiv"));
+        document.getElementById("messageBody").insertBefore(aSpan[3], document.getElementById("typeDiv"));
+        document.getElementById("messageBody").insertBefore(insert4, document.getElementById("typeDiv"));
 
         
 
@@ -55,13 +63,19 @@ input.addEventListener("keyup", function(event) {
       } else if (input.value.toLowerCase() == "about") {
 
         var workStuff = document.createElement('span');
-        workStuff.innerHTML = "Im Journey; I like long walks on the beach, and thus far I've worked with html, css, bootstrap, bulma, javascript, jquery, php, mysql, apache, python, and papyrus" + '<br>';
+        workStuff.innerHTML = "Im Journey; I'm 20 years of age, like long walks on the beach and " + '<br>';
         document.getElementById("messageBody").insertBefore(workStuff, document.getElementById("typeDiv"));
 
       } else if (input.value.toLowerCase() == "hobbies") {
 
         var workStuff = document.createElement('span');
-        workStuff.innerHTML = "playing and creating videogames, cooking, and loitering in dark alleys" + '<br>';
+        workStuff.innerHTML = "Playing and creating videogames, cooking, and loitering in dark alleys" + '<br>';
+        document.getElementById("messageBody").insertBefore(workStuff, document.getElementById("typeDiv"));
+
+      } else if (input.value.toLowerCase() == "languages") {
+
+        var workStuff = document.createElement('span');
+        workStuff.innerHTML = "I've worked with html, css, bootstrap, bulma, javascript, jquery, php, mysql, apache, python, and papyrus on multiple projects, with some made in a professional environment, and others as personal projects / projects with friends" + '<br>';
         document.getElementById("messageBody").insertBefore(workStuff, document.getElementById("typeDiv"));
 
       } else {
