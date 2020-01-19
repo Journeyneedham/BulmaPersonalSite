@@ -57,7 +57,7 @@ input.addEventListener("keyup", function(event) {
       } else if (input.value.toLowerCase() == "work") {
 
             var workStuff = document.createElement('span');
-            workStuff.innerHTML = "Currently employed at Phoenix Contact, working on multiple development projects involving the likes of bootstrap, php, mysql, and multiple js libraries" + '<br>';
+            workStuff.innerHTML = "Currently employed at Elite Property Management, working on an inventory management system and developing periscope data visualization dashboards" + '<br>';
             document.getElementById("messageBody").insertBefore(workStuff, document.getElementById("typeDiv"));
 
       } else if (input.value.toLowerCase() == "about") {

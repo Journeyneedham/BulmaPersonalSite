@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="dot.png"/>
 
   </head>
-  <body>
+  <body style="overflow: hidden;">
  
   <nav class="navbar is-fixed-top is-dark">
       <div class="container">
@@ -58,7 +58,7 @@
         </div>
       </nav>
   <a style="cursor: default">
-  <section class="hero is-large is-fullheight-with-navbar " id="top" style="background-image: url(starsback.png); margin-top: 3em;">
+  <section class="hero is-large is-fullheight-with-navbar " id="top" style="background-image: url(starsback.png); margin-top: 3em; padding-left: 1rem; padding-right: 1em;">
       <div class="hero-head">
 
       </div>
@@ -76,7 +76,7 @@
       
   </section>
 </a>
-  <section>
+  <section style="padding: 1rem;">
       <div class="columns is-centered">
         <div class="column is-6">
             <h2 class="title is-2 has-text-centered" id="about">What I'm about</h2>
@@ -130,12 +130,14 @@
         
         <div class="column is-5" style="display: flex;
         flex-wrap: wrap;
-        align-content: center; /* used this for multiple child kitty */
+        align-content: center; /* used this for multiple child */
         align-items: center; /* if an only child */">
-            <p class="has-text-center">I'm currently employed at <span class="has-text-primary">Phoenix Contact</span><br><br>
-              During my tenure at Phoenix, I've worked on a web-based configurator for a test disconnect system.
-               It is currently in use for internal customization, allowing module selection with size customization, marker color and text customization, test pole color and position, and test plug type selection;
-               with bill of material output into pdf and importable excel data. Another project I worked on was a configurator for DIN Rail, which was made with a responsive <span class="has-text-info">Bootstrap 3</span> front end 
+            <p class="has-text-center">I'm currently employed at <span class="has-text-primary">Elite Property Management</span> as an <span class="has-text-primary"></span>IT Systems Admin<br><br>
+              Currently, I'm working on an Inventory Management System, with a Bootstrap 4 front-end and PHP backend. It utilizes prepared statements, for protection from SQL injection. As well as Periscope data visualization
+              dashboard, which allow for increased productivity for our team.<br><br>
+              During my previous tenure at Phoenix, I'd worked on a web-based configurator for a test disconnect system.
+               It was in use for internal customization, allowing module selection with size customization, marker color and text customization, test pole color and position, and test plug type selection;
+               with bill of material output into pdf and importable excel data. Another project I'd worked on was a configurator for DIN Rail, which was made with a responsive <span class="has-text-info">Bootstrap 3</span> front end 
                and a <span class="has-text-info">PHP / mySQL</span> backend. 
                This configurator stored login information in tandem with DIN Rail information, which in addition to having a dynamic DIN Rail selection, 
                allowed for new DIN Rail part numbers to be added in the DB and viewed instantly! In my time on this planet, I've worked with HTML, CSS, <span class="has-text-info">Bootstrap 3 & 4</span>, Bulma, <span class="has-text-danger">Javascript</span>, 
@@ -143,7 +145,7 @@
         </div>
         <div class="column is-3">
         <figure class="image is-6by6">
-            <img class="is-rounded" src="journeyfall.png" alt="Placeholder image">
+            <img class="is-rounded" src="journeyfall.jpg" alt="Placeholder image">
           </figure>
         </div>
       </div>
@@ -156,45 +158,68 @@
         <div class="column is-6">   <hr></div>
       </div>
     <a href="index.html#projects" style="cursor: default"></a>
-    <section>
+    <section style="padding: 1rem;">
         <p class="title is-1 has-text-centered" id="projects">Projects</p>
         <p class="subtitle is-6 has-text-centered"><em>(Some of these are older, and haven't been worked on for a couple of sun-spins. <br>I'll get to it "tomorrow")</em></p>
         <div class="columns is-centered">
 
           <div class="column is-4 is-centered">
-              <a href="http://shiftnotifier.online/" target="_blank">
-              <div class="card">
+              <a href="https://wizardly-jennings-4bf847.netlify.com/" target="_blank">
+              <div class="card" style="height: 100%;">
                   <div class="card-image">
                     <figure class="image is-by3">
-                      <img src="ShiftCode.png" alt="Placeholder image">
+                      <img src="gearyslawncare.jpg" alt="Placeholder image">
                     </figure>
                   </div>
                   <div class="card-content">
                     
                     <div class="content" style="text-align: center">
-                      Utilized entire stack developing a micro-server in Flask to host endpoints leading to an AWS MySql database; the database contains SHIFT codes discatenated from "Borderlands 3"
-                       developer Randy Pitchford's tweets, with a python script pulling raw data from the Twitter API. Front end is responsive and incredibly mobile-friendly
+                      Bootstrap 4 website running on Netlify. Developed for a local business, optimized for SEO through meta tags, keyword usage, and Google Lighthouse audit suggestions. Contact form connects to Netlify
+                      for Hubspot-like functionality 
                       <br><br>
-                      <span class="tag is-dark">Flask</span>
-                      <span class="tag is-primary">Python</span>
-                      <span class="tag is-danger">AWS</span>
+                      <span class="tag is-light">Bootstrap 4</span>
                       <span class="tag is-warning">Javascript</span>
-                      <span class="tag is-info">Twitter API</span>
+                      <span class="tag is-success">SEO Oriented</span>
                     </div>
                   </div>
                 </div>
                 </a>
           </div>
+
+          <div class="column is-4 is-centered">
+            <a href="http://shiftnotifier.online/" target="_blank">
+            <div class="card" style="height: 100%;">
+                <div class="card-image">
+                  <figure class="image is-by3">
+                    <img src="ShiftCode.png" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  
+                  <div class="content" style="text-align: center">
+                    Utilized entire stack developing a micro-server in Flask to host endpoints leading to an AWS MySql database; the database contains SHIFT codes discatenated from "Borderlands 3"
+                     developer Randy Pitchford's tweets, with a python script pulling raw data from the Twitter API. Front end is responsive and incredibly mobile-friendly
+                    <br><br>
+                    <span class="tag is-dark">Flask</span>
+                    <span class="tag is-primary">Python</span>
+                    <span class="tag is-danger">AWS</span>
+                    <span class="tag is-warning">Javascript</span>
+                    <span class="tag is-info">Twitter API</span>
+                  </div>
+                </div>
+              </div>
+              </a>
+        </div>
       
         </div>
       <div class="columns is-centered">
 
         <div class="column is-4 is-centered">
             <a href="https://www.youtube.com/channel/UC1slN4auq-fpYKRBogNcO9g?view_as=subscriber" target="_blank">
-            <div class="card">
+            <div class="card" style="height: 100%;">
                 <div class="card-image">
                   <figure class="image is-by3">
-                    <img src="skyriminfinity.png" alt="Placeholder image">
+                    <img src="skyriminfinity.jpg" alt="Placeholder image">
                   </figure>
                 </div>
                 <div class="card-content">
@@ -212,7 +237,7 @@
         </div>
         <div class="column is-4 is-centered">
             <a href="https://github.com/Journeyneedham/SpotifyYoutubeAPI" target="_blank">
-            <div class="card">
+            <div class="card" style="height: 100%;">
                 <div class="card-image">
                   <figure class="image is-by3">
                     <img src="yslogo.jpg" alt="Placeholder image">
@@ -238,7 +263,7 @@
 
           <div class="column is-4 is-centered">
               <a href="https://www.youtube.com/watch?v=Pk6ZE5R2-A8&t=1s" target="_blank">
-              <div class="card">
+              <div class="card" style="height: 100%;">
                   <div class="card-image">
                     <figure class="image is-by3">
                       <img src="lastsamurai.jpg" alt="Placeholder image">
@@ -259,7 +284,7 @@
           </div>
           <div class="column is-4 is-centered">
               <a target="_blank">
-              <div class="card">
+              <div class="card" style="height: 100%;">
                   <div class="card-image">
                     <figure class="image is-by3">
                       <img src="vices.jpg" alt="Placeholder image">
@@ -284,19 +309,19 @@
         <div class="columns is-centered">
 
             <div class="column is-4 is-centered">
-                <a>
-                <div class="card">
+                <a href="https://www.instagram.com/needmanshoots/" target="_blank">
+                <div class="card" style="height: 100%;">
                     <div class="card-image">
                       <figure class="image is-by3">
-                        <img src="business.png" alt="Placeholder image">
+                        <img src="jrosa.jpg" alt="Placeholder image">
                       </figure>
                     </div>
                     <div class="card-content" style="text-align: center">
                       
                       <div class="content">
-                        Business cards made in Illustrator / Photoshop
+                        Art
                         <br><br>
-                        <span class="tag is-dander">Illustrator</span>
+                        <span class="tag is-primary">Illustrator</span>
                         <span class="tag is-info">Photoshop</span>
                       </div>
                     </div>
@@ -305,20 +330,20 @@
             </div>
             <div class="column is-4 is-centered">
                 <a href="https://www.flickr.com/photos/184990275@N02/" target="_blank">
-                <div class="card">
+                <div class="card" style="height: 100%;">
                     <div class="card-image">
                       <figure class="image is-by3">
-                        <img src="jrosa.png" alt="Placeholder image">
+                        <img src="photography.jpg" alt="Placeholder image">
                       </figure>
                     </div>
                     <div class="card-content">
                       
                       <div class="content" style="text-align: center">
-                        General art and photography
+                        Photography
                         <br><br>
                         <span class="tag is-dark">Nikon D3500</span>
                         <span class="tag is-info">Photoshop</span>
-                        <span class="tag is-dander">Illustrator</span>
+                        <span class="tag is-dander">Lightroom</span>
 
                       </div>
                     </div>
@@ -334,7 +359,7 @@
     <div class="columns is-centered">
       <div class="column is-6">   <hr></div>
     </div>
- 
+    <section class="padding: 1rem;">
     <p class="title is-1 has-text-centered" id="contact">Contact me</p>
     <p class="subtitle is-6 has-text-centered"><em>Wanna get to know me, collaborate on a project, or invite me to your <span class="has-text-success">birthday party?</span></em></p>
     <div class="columns is-centered">
@@ -380,6 +405,7 @@
       </form>
       </div>
     </div>
+    </section>
   </body>
   <script>
       (function() {
