@@ -63,19 +63,19 @@ input.addEventListener("keyup", function(event) {
       } else if (input.value.toLowerCase() == "about") {
 
         var workStuff = document.createElement('span');
-        workStuff.innerHTML = "Im Journey; I'm 20 years of age, like long walks on the beach and " + '<br>';
+        workStuff.innerHTML = "I'm Journey; I'm 20 years of age, and like long walks on the beach" + '<br>';
         document.getElementById("messageBody").insertBefore(workStuff, document.getElementById("typeDiv"));
 
       } else if (input.value.toLowerCase() == "hobbies") {
 
         var workStuff = document.createElement('span');
-        workStuff.innerHTML = "Playing and creating videogames, cooking, and loitering in dark alleys" + '<br>';
+        workStuff.innerHTML = "Playing videogames, photography, and loitering in dark alleys" + '<br>';
         document.getElementById("messageBody").insertBefore(workStuff, document.getElementById("typeDiv"));
 
       } else if (input.value.toLowerCase() == "languages") {
 
         var workStuff = document.createElement('span');
-        workStuff.innerHTML = "I've worked with html, css, bootstrap, bulma, javascript, jquery, php, mysql, LAMP, AWS, python/flask, and papyrus on multiple projects, with some made in a professional environment, and others as personal projects / projects with friends" + '<br>';
+        workStuff.innerHTML = "I've worked with html, css, bootstrap, bulma, javascript, jquery, php, mysql, lamp, aws/heroku, python/flask/django, and papyrus on multiple projects, with some made in a professional environment, and others as personal projects / projects with friends" + '<br>';
         document.getElementById("messageBody").insertBefore(workStuff, document.getElementById("typeDiv"));
 
       } else {
