@@ -61,12 +61,13 @@
         </div>
       </nav>
   <a style="cursor: default">
-  <section class="hero is-large is-fullheight-with-navbar " id="top" style="background-image: url(starsback.png); margin-top: 3em;">
-      <div class="hero-head">
-
+  <section class="hero is-large is-fullheight-with-navbar video" id="top" style="margin-top: 3em; background-image: url(starsback.png);">
+      <div class="hero-video">
+        <video poster="starsback.png" playsinline autoplay muted loop>
+          <source src="GifVideo.mp4" type="video/mp4">
+        </video>
       </div>
-    
-      <div class="hero-body" style="background-image: url(WebsiteCoverPhoto3.svg); background-repeat: no-repeat; background-position: center; background-size: cover">
+      <div class="hero-body" style="background-image: url(WebsiteCoverPhoto3.svg); background-repeat: no-repeat; background-position: center; background-size: cover; z-index: 10;">
         <div class="container has-text-left">
           <p class="title is-1">
             Hi, I'm Journey
@@ -98,7 +99,7 @@
                   </div>
                   <div class="message-body" style="background-color: rgb(34, 33, 33); color: white; max-height: 300px; overflow-y: auto" id="messageBody">
                     Welcome. Type <strong>'help'</strong> for a list of commands<br>
-                    <div id="typeDiv">jn:~ guest$ <input class="message" id="editableDiv" contenteditable="true" style="display: inline-block; background-color: transparent; border: 0; color: white; outline: none"></input>
+                    <div id="typeDiv" style="white-space: nowrap;">jn:~ guest$ <input class="message" id="editableDiv" contenteditable="true" style="display: inline-block; background-color: transparent; border: 0; color: white; outline: none"></input>
                   </div>
                   </div>
                 </article>
