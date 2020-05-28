@@ -15,6 +15,7 @@ html,body
     }
     #heroBanner {
         background-image: none!important;
+        align-self: center;
 
     }
 }
