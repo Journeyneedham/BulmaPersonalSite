@@ -13,4 +13,8 @@ html,body
     #top {
         background-image: url(starsback.png);
     }
+    #heroBanner {
+        background-image: none!important;
+
+    }
 }
