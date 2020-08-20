@@ -86,7 +86,7 @@ input.addEventListener("keyup", function(event) {
 
         function randPing() {
 
-          return ((Math.random() * 18) + 15);
+          return ((Math.random() * 18) + 15).toFixed(3) + " ms";
 
         }
         var workStuff = document.createElement('span');
