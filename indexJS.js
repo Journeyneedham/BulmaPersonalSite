@@ -7,7 +7,7 @@ input.addEventListener("keyup", function(event) {
       event.preventDefault();
       // Trigger the button element with a click
       var wTyped = document.createElement('span');
-      wTyped.innerHTML = 'jn:~ guest$ ' + input.value + '<br>';
+      wTyped.innerHTML = 'journeyneedham.com:~ guest$ ' + input.value + '<br>';
       document.getElementById("messageBody").insertBefore(wTyped, document.getElementById("typeDiv"));
       if (input.value.toLowerCase() == "ls") {
           
