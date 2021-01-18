@@ -28,6 +28,19 @@ html,body
 
     }
 
+    #top {
+
+        min-height: unset!important;
+
+    }
+
+    #heroBanner {
+
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+
+    }
+
 }
 
 
@@ -41,3 +54,4 @@ html,body
     }
 
 }
+
