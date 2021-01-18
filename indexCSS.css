@@ -19,7 +19,14 @@ html,body
 
     }
 
-    
+    #bannerParent:first-child {
+
+        padding-top: 0rem!important;
+        padding-bottom: 0rem!important;
+        text-align: center!important;
+
+
+    }
 
 }
 
