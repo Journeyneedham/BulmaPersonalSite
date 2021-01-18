@@ -13,24 +13,23 @@ html,body
 
 @media screen and (max-width: 1024px) {
 
-    #bannerParent {
-
-        display: flex;
-        
-
-    }
-
-    #heroBanner:first-child * {
+    #bannerParent:first-child * {
 
         text-align: center;
 
     }
 
-    #heroBanner:first-child {
+    
 
-        padding-top: 5rem!important;
-        padding-bottom: 5rem!important;
+}
 
+
+@media screen and (min-width: 1024px) {
+
+    #bannerParent {
+
+        display: flex;
+        flex-direction: row-reverse;
 
     }
 
