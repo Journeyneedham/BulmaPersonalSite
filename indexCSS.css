@@ -37,7 +37,7 @@ html,body
 
     #heroBanner {
 
-        padding-top: 2rem!important;
+        padding-top: 0rem!important;
         padding-bottom: 4rem!important;
         text-align: center!important;
 
@@ -45,7 +45,8 @@ html,body
 
     #JourneyVideo {
 
-        max-height: 360px;
+        max-height: 300px;
+        margin-top: 0rem;
 
     }
 
