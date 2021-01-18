@@ -16,7 +16,6 @@ html,body
     #bannerParent:first-child * {
 
         text-align: center;
-        max-height: 300px;
 
     }
 
@@ -40,6 +39,12 @@ html,body
 
         padding-top: 0rem!important;
         padding-bottom: 0rem!important;
+
+    }
+
+    #JourneyVideo {
+
+        max-height: 360px;
 
     }
 
