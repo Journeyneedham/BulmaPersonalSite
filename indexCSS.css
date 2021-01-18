@@ -10,16 +10,6 @@ html,body
 
 
 
-@media screen and (max-width: 768px) {
-    #top {
-        background-image: url(starsback.png);
-    }
-    #heroBanner {
-        background-image: none!important;
-        align-self: center;
-
-    }
-}
 
 @media screen and (max-width: 1024px) {
 
