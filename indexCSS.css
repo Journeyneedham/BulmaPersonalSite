@@ -23,9 +23,8 @@ html,body
 
         padding-top: 0rem!important;
         padding-bottom: 0rem!important;
-        margin-top: 0rem!important;
-        margin-bottom: 0rem!important;
         text-align: center!important;
+        flex-grow: 0.1;
 
 
     }
@@ -40,8 +39,6 @@ html,body
 
         padding-top: 0rem!important;
         padding-bottom: 0rem!important;
-        margin-top: 0rem!important;
-        margin-bottom: 0rem!important;
 
     }
 
