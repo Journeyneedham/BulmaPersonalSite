@@ -13,7 +13,12 @@ html,body
 
 @media screen and (max-width: 1024px) {
 
-    
+    #bannerParent {
+
+        display: flex;
+        
+
+    }
 
     #heroBanner:first-child * {
 
