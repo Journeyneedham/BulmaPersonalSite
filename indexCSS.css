@@ -47,12 +47,7 @@ html,body
 
 @media screen and (min-width: 1024px) {
 
-    #bannerParent {
-
-        display: flex!important;
-        flex-direction: row-reverse!important;
-
-    }
+   
 
 }
 
