@@ -23,6 +23,8 @@ html,body
 
         padding-top: 0rem!important;
         padding-bottom: 0rem!important;
+        margin-top: 0rem!important;
+        margin-bottom: 0rem!important;
         text-align: center!important;
 
 
@@ -36,8 +38,10 @@ html,body
 
     #heroBanner {
 
-        padding-top: 5rem!important;
-        padding-bottom: 5rem!important;
+        padding-top: 0rem!important;
+        padding-bottom: 0rem!important;
+        margin-top: 0rem!important;
+        margin-bottom: 0rem!important;
 
     }
 
