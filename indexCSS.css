@@ -13,12 +13,7 @@ html,body
 
 @media screen and (max-width: 1024px) {
 
-    #bannerParent {
-
-        display: flex;
-        flex-direction: column-reverse;
-
-    }
+    
 
     #heroBanner:first-child * {
 
