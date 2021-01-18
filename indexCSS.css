@@ -29,14 +29,6 @@ html,body
 
     }
 
-    #bannerParent:nth-child(2) {
-
-        padding-top: 2rem!important;
-        padding-bottom: 4rem!important;
-        text-align: center!important;
-
-    }
-
     #top {
 
         min-height: unset!important;
@@ -45,8 +37,9 @@ html,body
 
     #heroBanner {
 
-        padding-top: 0rem!important;
-        padding-bottom: 0rem!important;
+        padding-top: 2rem!important;
+        padding-bottom: 4rem!important;
+        text-align: center!important;
 
     }
 
